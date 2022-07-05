@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatIconModule} from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar'
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   imports: [
@@ -9,7 +10,8 @@ import { MatToolbarModule } from '@angular/material/toolbar'
   ],
   exports: [
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ]
 })
 export class MaterialModule { }

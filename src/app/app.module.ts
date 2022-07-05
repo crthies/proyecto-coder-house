@@ -4,11 +4,13 @@ import { MaterialModule } from './modules/material.module'
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './component/toolbar/toolbar.component';
+import { ProductosListaComponent } from './component/productos-lista/productos-lista.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    ProductosListaComponent
   ],
   imports: [
     BrowserModule,
