@@ -1,1 +1,9 @@
-<p>productos-lista works!</p>
+<div class="container mb-3" *ngFor="let muneco of munecos" >
+    <mat-card class="productos">
+        <mat-card-title>{{muneco.name}}</mat-card-title>
+        <mat-card-subtitle>{{muneco.nick}}</mat-card-subtitle>
+        <mat-card-content>
+            <p>{{ muneco.description }}</p>
+        </mat-card-content>
+    </mat-card>
+</div>

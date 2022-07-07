@@ -2,8 +2,7 @@
     <mat-toolbar-row>
         <span>Proyecto Coderhouse!</span>
         <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon" aria-label="Example
-            icon-button with menu icon">
+        <button mat-icon-button>
             <mat-icon>menu</mat-icon>
         </button>
     </mat-toolbar-row>
@@ -11,13 +10,15 @@
     <mat-toolbar-row>
         <span>Muñecos</span>
         <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon favorite-icon"
-            aria-label="Example icon-button with heart icon">
-            <mat-icon>favorite</mat-icon>
-        </button>
-        <button mat-icon-button class="example-icon" aria-label="Example
-            icon-button with share icon">
-            <mat-icon>share</mat-icon>
-        </button>
+        <span routerLink="/agregar">
+            <button mat-icon-button matTooltip="Agrega un nuevo producto">
+                <mat-icon>add_to_photos</mat-icon>
+            </button>
+        </span>
+        <span routerLink="/productos">
+            <button mat-icon-button matTooltip="Lista todos los producto" class="white-icon">
+                <mat-icon>view_comfy</mat-icon>
+            </button>
+        </span>
     </mat-toolbar-row>
 </mat-toolbar>
