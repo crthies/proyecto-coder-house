@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductosAgregarComponent implements OnInit {
 
+  public tipoMunecos: any = [
+    { id: 1, name: "Muñeca" },
+    { id: 2, name: "Duende" },
+    { id: 3, name: "Jirafa" },
+    { id: 4, name: "Gato" }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

@@ -7,13 +7,17 @@ import { AppRoutingModule } from './routing/routing.module';
 import { ToolbarComponent } from './component/toolbar/toolbar.component';
 import { ProductosListaComponent } from './component/productos-lista/productos-lista.component';
 import { ProductosAgregarComponent } from './component/productos-agregar/productos-agregar.component';
+import { SideNavComponent } from './component/side-nav/side-nav.component';
+import { HomeComponent } from './component/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     ProductosListaComponent,
-    ProductosAgregarComponent
+    ProductosAgregarComponent,
+    SideNavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

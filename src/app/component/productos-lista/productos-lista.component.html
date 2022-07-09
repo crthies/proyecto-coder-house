@@ -1,9 +1,18 @@
 <div class="container mb-3" *ngFor="let muneco of munecos" >
-    <mat-card class="productos">
+    <mat-card>
         <mat-card-title>{{muneco.name}}</mat-card-title>
         <mat-card-subtitle>{{muneco.nick}}</mat-card-subtitle>
         <mat-card-content>
             <p>{{ muneco.description }}</p>
         </mat-card-content>
+        <img mat-card-image style="width: 150px" src="{{muneco.imagen}}">
+        <mat-card-actions>
+            <button mat-icon-button color="success" matTooltip="Editar">
+                <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button color="success" matTooltip="Agregar al carro">
+                <mat-icon>shopping_cart</mat-icon>
+            </button>
+        </mat-card-actions>
     </mat-card>
 </div>

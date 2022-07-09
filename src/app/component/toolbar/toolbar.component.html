@@ -1,17 +1,22 @@
  <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <span>Proyecto Coderhouse!</span>
-        <span class="example-spacer"></span>
         <button mat-icon-button>
             <mat-icon>menu</mat-icon>
         </button>
+        <span>Proyecto Coderhouse!</span>
+        <span class="example-spacer"></span>
     </mat-toolbar-row>
 
     <mat-toolbar-row>
-        <span>Muñecos</span>
+        <span>La vitrina del muñeco</span>
         <span class="example-spacer"></span>
+        <span routerLink="/home">
+            <button mat-icon-button color="success">
+                <mat-icon>home</mat-icon>
+            </button>
+        </span>
         <span routerLink="/agregar">
-            <button mat-icon-button matTooltip="Agrega un nuevo producto">
+            <button mat-icon-button matTooltip="Agrega un nuevo producto" color="success">
                 <mat-icon>add_to_photos</mat-icon>
             </button>
         </span>

@@ -1,0 +1,22 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" >
+    <p class="designation">Coderhouse</p>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button">
+      <mat-icon>home</mat-icon>
+      <span routerLink="/home">Inicio</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>add_to_photos</mat-icon>
+      <span routerLink="/agregar">Agregar</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>view_comfy</mat-icon>
+      <span routerLink="/productos">Listar</span>
+    </button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

@@ -1,1 +1,17 @@
-<p>productos-agregar works!</p>
+<mat-card class="agregar-producto">
+    <form action="">
+        <mat-form-field>
+            <mat-select placeholder="Tipo de muñeco">
+                <mat-option *ngFor="let tipoMuneco of tipoMunecos" value="name">
+                    {{tipoMuneco.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" matInput placeholder="Nombre del muñeco">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" matInput placeholder="Descripcion">
+        </mat-form-field>
+    </form>
+</mat-card>
